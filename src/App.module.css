@@ -1,0 +1,168 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.innerContainer {
+  width: 365px;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: small;
+}
+
+.navigationTitle {
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: grey;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.headerRight {}
+
+.headerًRightTitle {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.headerًRightSubTitle {
+  color: grey;
+  display: block;
+  font-size: small;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.sortOptionsButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.sortTitle {
+  color: grey;
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: small;
+  font-weight: bold;
+}
+
+.reviewCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reviewCard {
+  width: 160px;
+  margin-bottom: 1rem;
+}
+
+.reviewCardImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.reviewCardImage {}
+
+.reviewCardFooter {
+  font-weight: bold;
+  font-size: small;
+}
+
+.reviewCardTitle {
+  width: 160px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reviewCardFooterBottom {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.starIconWrapper {
+  padding-top: 5px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 365px;
+  background-color: rgba(0, 0, 0, 0.4);
+  transform: translate(1rem);
+}
+
+
+.sortOptionsContainer {
+  width: 365px;
+  padding: 2rem;
+  height: 250px;
+  background-color: white;
+  position: fixed;
+  bottom: -250px;
+  border-radius: 1rem 1rem 0 0;
+  transform: translate(1rem);
+  transition: all 0.5s;
+}
+
+.moveSortOptionsContainer {
+  bottom: 0;
+}
+
+.sortOptionsContainerTitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.sortOptionsList {
+  list-style: none;
+}
+
+.sortOptionsList li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sortOptionInput {
+  appearance: none;
+  border-radius: 0.55rem;
+  border: 3px solid #FFF;
+  width: 20px;
+  aspect-ratio:  1 / 1;
+  margin-left: 1rem;
+  outline: 1px solid #999;
+}
+
+.sortOptionInput:checked {
+  background-color: rgb(102, 209, 39);
+  outline: 1px solid rgb(102, 209, 39);
+}
